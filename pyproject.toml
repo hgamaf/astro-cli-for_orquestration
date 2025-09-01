@@ -1,9 +1,7 @@
 [project]
 name = "astro-cli-for-orquestration"
 version = "0.1.0"
-description = "Add your description here"
+description = "Apache Airflow orchestration project using Astronomer Astro"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = [
-    "airbyte>=0.29.0",
-]
+dependencies = []

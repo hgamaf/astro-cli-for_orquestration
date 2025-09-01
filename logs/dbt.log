@@ -1,0 +1,149 @@
+[0m07:39:37.304685 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047a6540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c462d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c46000>]}
+
+
+============================== 07:39:37.309242 | 96ea13b6-6943-4ece-8be1-0357b5a9b77c ==============================
+[0m07:39:37.309242 [info ] [MainThread]: Running with dbt=1.10.9
+[0m07:39:37.309651 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'warn_error': 'None', 'invocation_command': 'dbt init', 'printer_width': '80', 'version_check': 'True', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'static_parser': 'True', 'quiet': 'False', 'use_colors': 'True', 'debug': 'False', 'log_path': 'logs', 'cache_selected_only': 'False', 'profiles_dir': '/Users/henriquegamafontes/.dbt', 'use_experimental_parser': 'False', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'empty': 'None'}
+[0m07:39:45.134666 [error] [MainThread]: Encountered an error:
+
+[0m07:39:45.140581 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/cli/main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/task/init.py", line 324, in run
+    project_name = self.get_valid_project_name()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/task/init.py", line 278, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m07:39:45.323175 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 8.090722, "process_in_blocks": "0", "process_kernel_time": 0.17237, "process_mem_max_rss": "103038976", "process_out_blocks": "0", "process_user_time": 0.910534}
+[0m07:39:45.323560 [debug] [MainThread]: Command `dbt init` failed at 07:39:45.323489 after 8.09 seconds
+[0m07:39:45.323816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c46360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108da99d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109cbfa10>]}
+[0m07:39:45.324056 [debug] [MainThread]: Flushing usage events
+[0m07:40:02.095421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f227b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a322a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a31fa0>]}
+
+
+============================== 07:40:02.099872 | 815e8836-1a43-4832-b8e8-48b9c72ca16c ==============================
+[0m07:40:02.099872 [info ] [MainThread]: Running with dbt=1.10.9
+[0m07:40:02.100229 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'empty': 'None', 'log_cache_events': 'False', 'profiles_dir': '/Users/henriquegamafontes/.dbt', 'use_experimental_parser': 'False', 'printer_width': '80', 'no_print': 'None', 'write_json': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'quiet': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'invocation_command': 'dbt init', 'use_colors': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'introspect': 'True'}
+[0m07:40:23.138592 [debug] [MainThread]: Starter project path: /Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/include/starter_project
+[0m07:40:23.152662 [info ] [MainThread]: 
+Your new dbt project "astro_dbt_dev" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m07:40:23.153437 [info ] [MainThread]: Setting up your profile.
+[0m07:40:31.557463 [error] [MainThread]: Encountered an error:
+
+[0m07:40:31.564506 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/cli/main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/task/init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/task/init.py", line 242, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m07:40:31.570190 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 29.516161, "process_in_blocks": "0", "process_kernel_time": 0.125981, "process_mem_max_rss": "102858752", "process_out_blocks": "0", "process_user_time": 0.792463}
+[0m07:40:31.571564 [debug] [MainThread]: Command `dbt init` failed at 07:40:31.571320 after 29.52 seconds
+[0m07:40:31.572282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a6c860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106520a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a32150>]}
+[0m07:40:31.573153 [debug] [MainThread]: Flushing usage events
+[0m07:41:20.049663 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071279e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076ee150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076ede80>]}
+
+
+============================== 07:41:20.053889 | b24998f6-af7d-41c8-82f3-f8adb257633d ==============================
+[0m07:41:20.053889 [info ] [MainThread]: Running with dbt=1.10.9
+[0m07:41:20.054269 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'version_check': 'True', 'target_path': 'None', 'partial_parse': 'True', 'no_print': 'None', 'indirect_selection': 'eager', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'log_path': 'logs', 'invocation_command': 'dbt init', 'profiles_dir': '/Users/henriquegamafontes/.dbt', 'debug': 'False', 'log_cache_events': 'False', 'static_parser': 'True', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False'}
+[0m07:41:31.189442 [debug] [MainThread]: Starter project path: /Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/include/starter_project
+[0m07:41:31.202877 [info ] [MainThread]: 
+Your new dbt project "dbt_astro" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m07:41:31.203581 [info ] [MainThread]: Setting up your profile.
+[0m07:54:06.922953 [error] [MainThread]: Encountered an error:
+
+[0m07:54:06.939629 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/cli/main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/task/init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/task/init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/task/init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/dbt/task/init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/henriquegamafontes/.pyenv/versions/3.12.0/lib/python3.12/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m07:54:06.957783 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 766.9948, "process_in_blocks": "0", "process_kernel_time": 0.167504, "process_mem_max_rss": "105201664", "process_out_blocks": "0", "process_user_time": 0.828243}
+[0m07:54:06.958449 [debug] [MainThread]: Command `dbt init` failed at 07:54:06.958345 after 767.00 seconds
+[0m07:54:06.959660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076edc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076d5ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10782c2c0>]}
+[0m07:54:06.960280 [debug] [MainThread]: Flushing usage events
